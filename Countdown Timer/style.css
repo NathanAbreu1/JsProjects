@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+body {
+  background-image: url(images/vencislav-sharkov-XMsCuTfP_8g-unsplash.jpg);
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-top: 10rem;
+}
+
+.countdown-container {
+  color: var(--primary-color);
+  display: flex;
+}
+
+.bigtext {
+  font-weight: bold;
+  font-size: 6rem;
+  margin: 0 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
+  font-size: 1.5rem;
+}

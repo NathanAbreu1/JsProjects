@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url(images/kurtzgesagt.png);
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background-color: #13131a;
+}
+
+.container {
+  position: relative;
+  width: 37.5rem;
+  height: 50rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 43px 17px rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.display {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+  border-bottom: 1px solid #fff;
+}
+
+.display {
+  font-size: 4rem;
+  padding: 15px;
+  color: #fff;
+}
+
+.display p {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+  background-color: transparent;
+  width: 150px;
+  height: 128px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-size: 35px;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #999;
+}
+
+button[name="equal"] {
+  background-color: blue;
+  border-bottom-right-radius: 1.2rem;
+}
+
+button[name="equal"]:hover {
+  background-color: #0039a6;
+}
+
+button[name="left-parenthesis"] {
+  border-bottom-left-radius: 1.2rem;
+}
